@@ -82,6 +82,8 @@ main p {
 
 .logo {
 margin: 0.4em;
+display: inline;
+height:50px;
 }
 .menu label, #hamburger { 
   display: none;
@@ -109,8 +111,16 @@ margin: 0.4em;
   box-sizing: border-box;
   display: block;
   width: 100%;
-  border-top: 1px solid #333;
+
+  border-left: 1px solid #333;
   margin-right: 300px;
+  margin-bottom: 30px;
+}
+.menuLinks {
+  margin-bottom: 100px;
+}
+#homelink {
+  margin-top: 65px;
 }
 
 /* (B) SHOW HAMBURGER ICON */
@@ -132,7 +142,7 @@ margin: 0.4em;
 
    @media only screen and (max-width: 480px) {
     .menuLinks a {
-      margin-right: 200px;
+      margin-right: 50px;
     }
     #homelink {
       margin-top: 65px;
