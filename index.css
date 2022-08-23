@@ -135,8 +135,9 @@ height:50px;
       z-index: 99;
       background: black;
       color: white;
-      list-style: none;
-      padding-top: 4rem;
+      display: flex;
+      flex-direction: column;
+      padding-top: 50%;
     }
     .showMenu {
       transform: translateY(0);
