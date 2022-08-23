@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #050807;
+    color: white;
+    scroll-behavior: smooth;
+    /* font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;*/
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+li {
+  font-size: 17px;
+}
+
+.section {
+  margin-top: 300px;
+}
+
+@media only screen and (max-width: 767px) {
+  .section {
+    margin-top: 100px;
+  }
+ }
+
+.sectionName {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  border-bottom: 1px solid aqua;
+margin-bottom: 30px;
+padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+  .sectionName {
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+  }
+}
+/* Main*/
+main {
+  margin-top: 90px;
+}
+main p {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+  main p {
+    font-size: 17px;
+  }
+}
+/* Navigation Bar */
+.anchor {
+  padding-top: 90px;
+   margin-top: -90px;
+}
+  
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px white solid;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 1;
+}
+
+.logo {
+margin: 0.4em;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .menu a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.5s;
+  }
+  
+  /* Change the color of links on hover */
+  .menu a:hover {
+    color: aqua;
+  }
+
+
+  
+
+/* #Home section styles */
+#greeting {
+  margin-right: 370px;
+}
+#home h1 {
+  font-size: 36px;
+}
+#home * {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#home img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+@media only screen and (max-width: 767px) {
+ h2 {
+  font-size: 25px;
+ }
+ #greeting {
+  padding: 0px;
+}
+}
+
+@media only screen and (max-width: 480px) {
+  #greeting {
+    margin-right: 150px;
+  }
+  .firstsection h2 {
+    font-size: 20px;
+  }
+ }
+
+/* #About section styles */
+
+.aboutSection * {
+  padding: 20px;
+}
+.aboutSection h2 {
+  margin-top: 25px;
+}
+
+#scolarlink {
+  padding: 0px;
+  color: aqua;
+}
+.aboutSection p {
+  margin: 0 100px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.aboutSection li {
+  margin: 0 100px;
+
+}
+
+@media only screen and (max-width: 767px) {
+  .aboutSection p {
+    margin: 0 20px;
+  }
+  .aboutSection li {
+    margin: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .aboutSection * {
+    padding: 10px;
+  }
+  .aboutSection h2 {
+    margin-top: 45px;
+  }
+}
+
+
+
+
+/* #My Skills section styles */
+.mySkillsSection h4 {
+  padding: 20px;
+}
+.mySkillsSection li {
+  margin: 0 100px;
+  padding: 10px;
+}
+@media only screen and (max-width: 480px) {
+  .mySkillsSection li {
+    margin: 0 30px;
+    padding: 5px;
+  }
+}
+
+/* #Projects section styles */
+.projectsSection img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  
+}
+@media only screen and (max-width: 480px) {
+  .projectsSection img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    
+  }
+}
+
+.projectsSection li {
+ display: inline;
+ padding: 20px;
+}
+
+
+
+ .projectsContainer {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ }
+
+ .projectsSection a {
+  text-decoration: none;
+ }
+ .projectsSection figure {
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 200px;
+  margin: auto;
+}
+
+
+.projectsSection figcaption {
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 10px;
+  text-align: center;
+}
+
+.projectsSection img:hover {
+  transform: scale(1.1);
+}
+
+.projectsSection img:hover + figcaption {
+  color: aqua;
+}
+.projectsSection figcaption:hover {
+  color: aqua;
+}
+
+@media only screen and (max-width: 767px) {
+ .projectsContainer {
+  padding-top: 20px;
+  display: block;
+ }
+}
+
+
+
+/* #Contact section styles */
+
+
+.contactContainer {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 300px;
+}
+.contactSection button {
+  margin-top: 25px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    transition: 0.5s;
+    border: 1px solid white;
+}
+
+
+.contactSection button:hover {
+color: aqua;
+border: 1px solid aqua;
+}
+
+@media only screen and (max-width: 767px) {
+  .contactContainer {
+    width: 80%;
+    margin-bottom: 200px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .contactContainer {
+    margin-bottom: 100px;
+  }
+  .contactSection p {
+    margin-top: 20px;
+  }
+}
+
+
+/* #Contact section styles */
+footer {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+footer img {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  margin: 10px 3px;
+  
+}
+footer img:hover {
+  background-color: aqua;
+}
+
+
