@@ -212,6 +212,12 @@ height:50px;
 
 .aboutSection p, h4, li {
   padding: 20px;
+  color: yellow;
+}
+
+#about {
+  padding-top: 60px;
+ 
 }
 
 #scolarlink {
