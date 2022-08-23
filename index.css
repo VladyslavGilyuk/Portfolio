@@ -83,12 +83,61 @@ main p {
 .logo {
 margin: 0.4em;
 }
+.menu label, #hamburger { 
+  display: none;
+}
+
+.menu img {
+  width: 48px;
+  height: 48px;
+}
 
 .menu {
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
+  @media only screen and (max-width: 767px) {
+/*.menuLinks {
+  display: none;
+}*/
+ /* (A) BREAK INTO VERTICAL MENU */
+
+
+ .menuLinks a {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-top: 1px solid #333;
+  margin-right: 300px;
+}
+
+/* (B) SHOW HAMBURGER ICON */
+.menu label { 
+  position: fixed;
+  top: 0;
+  right:0;
+  display:block; 
+  color: white;
+  font-style: normal;
+  font-size: 1.2em;
+  padding: 3px;
+}
+
+/* (C) TOGGLE SHOW/HIDE MENU */
+.menuLinks { display: none; }
+.menu input:checked ~ .menuLinks { display: block; }
+   }
+
+   @media only screen and (max-width: 480px) {
+    .menuLinks a {
+      margin-right: 200px;
+    }
+    #homelink {
+      margin-top: 65px;
+    }
+   }
   
   /* Style the links inside the navigation bar */
   .menu a {
