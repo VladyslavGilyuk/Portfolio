@@ -16,20 +16,22 @@
         </div>
 
         <div class="menu">
-          <label for="hamburger">
-            <img src="images\icons\menu.png"/>
-          </label>
-          <input type="checkbox" id="hamburger"/>
-          
-          <div class ="menuLinks">
-            <a href="#home" id="homelink">Home</a> 
-            <a href="#about">About</a> 
-            <a href="#mySkills">My Skills</a> 
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a> 
-            <a href="images\C.V.pdf">Resume</a> 
+          <div class="menuItems">
+           <a href="#home" class="menuItem">Home</a>
+            <a href="#about" class="menuItem">About</a> 
+            <a href="#mySkills" class="menuItem">My Skills</a> 
+            <a href="#projects" class="menuItem">Projects</a>
+            <a href="#contact" class="menuItem">Contact</a> 
+            <a href="images\C.V.pdf" class="menuItem">Resume</a>
           </div>
-          </div>
+            <button class="hamburger">
+            <img class="menubtn menuIcon material-icons" src="images\icons\menu.png" />
+            <img  class="menubtn closeIcon material-icons" src="images\icons\close.png" />
+          </button> 
+        </div>
+     
+         
+        
         </div>
 
       <main>
@@ -125,5 +127,38 @@
         <a href="https://www.facebook.com/profile.php?id=100010499552339" target="_blank"><img src="images\icons\facebook.png" /></a>
         <p>Designed & Built by Vladyslav Gilyuk 2022</p>
       </footer>  
+
+      <script>
+        const menu = document.querySelector(".menuItems");
+const menuItems = document.querySelectorAll(".menuItem");
+const hamburger= document.querySelector(".hamburger");
+const closeIcon= document.querySelector(".closeIcon");
+const menuIcon = document.querySelector(".menuIcon");
+const windowSize = window.outerWidth;
+/*avdfb*/
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    closeIcon.classList.remove("asblock");
+    menuIcon.classList.add("asblock");
+    menuIcon.classList.remove("asnone");
+  } 
+   else {
+    menu.classList.add("showMenu");
+    menuIcon.classList.remove("asblock");
+    menuIcon.classList.remove("menubtn");
+    menuIcon.classList.add("asnone");
+    closeIcon.classList.add("asblock");
+  
+  }
+}
+menuItems.forEach( 
+  function(menuItem) { 
+    menuItem.addEventListener("click", toggleMenu);
+  }
+)
+
+hamburger.addEventListener("click", toggleMenu);
+      </script>
   </body>
 </html>
