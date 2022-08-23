@@ -369,7 +369,7 @@ border: 1px solid aqua;
 
 @media only screen and (max-width: 480px) {
   .contactContainer {
-    margin-bottom: 100px;
+    margin-bottom: 150px;
   }
   .contactSection p {
     margin-top: 20px;
@@ -389,9 +389,14 @@ footer img {
   background-color: #fff;
   border-radius: 50%;
   width: 40px;
+  height:40px;
   margin: 10px 3px;
-  
 }
+@media only screen and (max-width: 480px) {
+  footer img {
+    width: 30px;
+    height:30px;
+  }
 footer img:hover {
   background-color: aqua;
 }
