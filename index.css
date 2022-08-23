@@ -85,13 +85,14 @@ margin: 0.4em;
 display: inline;
 height:50px;
 }
-.menu label, #hamburger { 
-  display: none;
-}
 
-.menu img {
+.menubtn {
+  display: none;
   width: 48px;
   height: 48px;
+}
+.menuIcon {
+  display: none;
 }
 
 .menu {
@@ -101,52 +102,51 @@ height:50px;
   }
 
   @media only screen and (max-width: 767px) {
-/*.menuLinks {
-  display: none;
-}*/
- /* (A) BREAK INTO VERTICAL MENU */
+    .menubtn {
+      display: block;
+    }
+      .closeIcon {
+      display: none;
+    }
 
+    .asblock {
+      display: block;
+    }
+    .asnone {
+      display: none;
+    }
+ 
+    .hamburger {
+      position: fixed;
+      z-index: 100;
+      top: 5px;
+      right: 1rem;
+     border: none;
+      cursor: pointer;
+    }
+    .menuItems {
+      position: fixed;
+      transform: translateY(-100%);
+      transition: transform 0.3s;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 99;
+      background: black;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      padding-top: 50%;
+    }
+    .showMenu {
+      transform: translateY(0);
+    }
 
- .menuLinks a {
-  box-sizing: border-box;
-  display: block;
-  width: 100%;
-
-  border-left: 1px solid #333;
-  margin-right: 300px;
-  margin-bottom: 30px;
-}
-.menuLinks {
-  margin-bottom: 200px;
-}
-#homelink {
-  margin-top: 65px;
-}
-
-/* (B) SHOW HAMBURGER ICON */
-.menu label { 
-  position: fixed;
-  top: 0;
-  right:0;
-  display:block; 
-  color: white;
-  font-style: normal;
-  font-size: 1.2em;
-  padding: 3px;
-}
-
-/* (C) TOGGLE SHOW/HIDE MENU */
-.menuLinks { display: none; }
-.menu input:checked ~ .menuLinks { display: block; }
    }
 
    @media only screen and (max-width: 480px) {
-    .menuLinks a {
-      margin-right: 50px;
-    }
-    #homelink {
-      margin-top: 65px;
-    }
+   
    }
   
   /* Style the links inside the navigation bar */
