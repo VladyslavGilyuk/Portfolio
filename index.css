@@ -1,3 +1,4 @@
+/* General settings */
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +6,7 @@
     background-color: #050807;
     color: white;
     scroll-behavior: smooth;
-    /* font-family: 'Times New Roman', Times, serif;
-    font-weight: 700;*/
+    font-family: 'Times New Roman', Times, serif;
 }
 
 h1 {
@@ -50,7 +50,8 @@ padding-bottom: 20px;
   padding-bottom: 10px;
   }
 }
-/* Main*/
+
+/* Main General settings*/
 main {
   margin-top: 90px;
 }
@@ -63,12 +64,8 @@ main p {
     font-size: 17px;
   }
 }
-/* Navigation Bar */
-.anchor {
-  padding-top: 90px;
-   margin-top: -90px;
-}
-  
+
+/* Navigation Bar */ 
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -90,6 +87,25 @@ height:50px;
   width: 45px;
 }
 
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.menu a:hover {
+  color: aqua;
+}
+
 .menubtn {
   display: none;
   width: 48px;
@@ -98,12 +114,6 @@ height:50px;
 .menuIcon {
   display: none;
 }
-
-.menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 
   @media only screen and (max-width: 767px) {
     .menubtn {
@@ -149,35 +159,12 @@ height:50px;
 
    }
 
-   @media only screen and (max-width: 480px) {
-   
-   }
-  
-  /* Style the links inside the navigation bar */
-  .menu a {
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    transition: 0.5s;
-  }
-  
-  /* Change the color of links on hover */
-  .menu a:hover {
-    color: aqua;
-  }
-
-
-  
-
 /* #Home section styles */
-#greeting {
-  margin-right: 370px;
+.anchor {
+  padding-top: 90px;
+   margin-top: -90px;
 }
-#home h1 {
-  font-size: 36px;
-}
+
 #home * {
   padding: 20px;
   display: flex;
@@ -185,6 +172,15 @@ height:50px;
   align-items: center;
   text-align: center;
 }
+
+#greeting {
+  margin-right: 370px;
+}
+
+#home h1 {
+  font-size: 36px;
+}
+
 #home img {
   display: block;
   margin-left: auto;
@@ -212,16 +208,12 @@ height:50px;
   }
  }
 
-/* #About section styles */
 
+/* #About section styles */
 .aboutSection p, h4, ul, li {
   padding: 20px;
 }
 
-#scolarlink {
-  padding: 0px;
-  color: aqua;
-}
 .aboutSection p {
   margin: 0 100px;
   text-align: center;
@@ -231,6 +223,11 @@ height:50px;
 .aboutSection li {
   margin: 0 100px;
 
+}
+
+#scolarlink {
+  padding: 0px;
+  color: aqua;
 }
 
 @media only screen and (max-width: 767px) {
@@ -253,8 +250,6 @@ height:50px;
 }
 
 
-
-
 /* #My Skills section styles */
 .mySkillsSection h4 {
   padding: 20px;
@@ -275,31 +270,26 @@ height:50px;
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  
 }
 @media only screen and (max-width: 480px) {
   .projectsSection img {
     width: 180px;
     height: 180px;
-    border-radius: 50%;
-    
+    border-radius: 50%; 
   }
 }
+
+.projectsContainer {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
 
 .projectsSection li {
  display: inline;
  padding: 20px;
 }
-
-
-
- .projectsContainer {
-  padding-top: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
- }
 
  .projectsSection a {
   text-decoration: none;
@@ -343,11 +333,7 @@ margin-bottom: 150px;
   }
  }
 
-
-
 /* #Contact section styles */
-
-
 .contactContainer {
   margin: auto;
   width: 50%;
@@ -363,7 +349,6 @@ margin-bottom: 150px;
     transition: 0.5s;
     border: 1px solid white;
 }
-
 
 .contactSection button:hover {
 color: aqua;
