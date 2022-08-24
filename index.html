@@ -10,11 +10,11 @@
   </head>
   <body>
         <!-- Navigation Bar -->
-      <div class="navbar">
-        <div class="logo">
-            <a href="#home" class="split"><img src="images\Logo.png" alt="Logo Image" width="45px" /></a> 
-        </div>
+      <nav class="navbar">
 
+        <div class="logoContainer">
+            <a href="#home" class="split"><img id="logo" src="images\Logo.png" alt="Logo Image"/></a> 
+        </div>
         <div class="menu">
           <div class="menuItems">
            <a href="#home" class="menuItem">Home</a>
@@ -29,10 +29,7 @@
             <img  class="menubtn closeIcon material-icons" src="images\icons\close.png" />
           </button> 
         </div>
-     
-         
-        
-        </div>
+        </nav>
 
       <main>
         <!-- Home section -->
@@ -120,45 +117,13 @@
         </div>
       </main>
 
-      <!--Footer section -->
+          <!--Footer section -->
       <footer>
-        <a href="" target="_blank"><img src="images\icons\linkedin.png" /></a>
-        <a href="" target="_blank"><img src="images\icons\github.png" /></a>
-        <a href="https://www.facebook.com/profile.php?id=100010499552339" target="_blank"><img src="images\icons\facebook.png" /></a>
+        <a href="" target="_blank"><img src="images\icons\linkedin.png" alt="LinkedIn Icon"/></a>
+        <a href="" target="_blank"><img src="images\icons\github.png" alt="GitHub Icon"/></a>
+        <a href="https://www.facebook.com/profile.php?id=100010499552339" target="_blank"><img src="images\icons\facebook.png" alt="Facebook Icon"/></a>
         <p>Designed & Built by Vladyslav Gilyuk 2022</p>
       </footer>  
-
-      <script>
-        const menu = document.querySelector(".menuItems");
-const menuItems = document.querySelectorAll(".menuItem");
-const hamburger= document.querySelector(".hamburger");
-const closeIcon= document.querySelector(".closeIcon");
-const menuIcon = document.querySelector(".menuIcon");
-const windowSize = window.outerWidth;
-/*avdfb*/
-function toggleMenu() {
-  if (menu.classList.contains("showMenu")) {
-    menu.classList.remove("showMenu");
-    closeIcon.classList.remove("asblock");
-    menuIcon.classList.add("asblock");
-    menuIcon.classList.remove("asnone");
-  } 
-   else {
-    menu.classList.add("showMenu");
-    menuIcon.classList.remove("asblock");
-    menuIcon.classList.remove("menubtn");
-    menuIcon.classList.add("asnone");
-    closeIcon.classList.add("asblock");
-  
-  }
-}
-menuItems.forEach( 
-  function(menuItem) { 
-    menuItem.addEventListener("click", toggleMenu);
-  }
-)
-
-hamburger.addEventListener("click", toggleMenu);
-      </script>
+      <script src="App.js"></script>
   </body>
 </html>
