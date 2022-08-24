@@ -80,10 +80,14 @@ main p {
     z-index: 1;
 }
 
-.logo {
+.logoContainer {
 margin: 0.4em;
 display: inline;
 height:50px;
+}
+
+#logo {
+  width: 45px;
 }
 
 .menubtn {
