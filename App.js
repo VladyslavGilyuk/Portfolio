@@ -27,4 +27,6 @@ menuItems.forEach(
   }
 )
 
+window.onload = function(){ document.getElementById("loading").style.display = "none" }
+
 hamburger.addEventListener("click", toggleMenu);
