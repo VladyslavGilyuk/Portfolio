@@ -27,7 +27,7 @@ menuItems.forEach(
   }
 )
 
-window.onload = setTimeout(function omg(){ document.getElementById("loading").style.display = "none" }, 1000)
+window.onload = setTimeout(function omg(){ document.getElementById("loading").style.display = "none" }, 2000)
 
 
 hamburger.addEventListener("click", toggleMenu);
