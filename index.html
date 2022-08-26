@@ -9,28 +9,31 @@
       
   </head>
   <body>
+        <!-- On load -->
+      <div id="loading">
+        <img id="loading-image" src="images\Logo.png" alt="Loading..." />
+      </div>  
         <!-- Navigation Bar -->
-      <div class="navbar">
-        <div class="logo">
-            <a href="#home" class="split"><img src="images\Logo.png" alt="Logo Image" width="45px" /></a> 
-        </div>
+      <nav class="navbar">
 
-        <div class="menu">
-          <label for="hamburger">
-            <img src="images\icons\menu.png"/>
-          </label>
-          <input type="checkbox" id="hamburger"/>
-          
-          <div class ="menuLinks">
-            <a href="#home" id="homelink">Home</a> 
-            <a href="#about">About</a> 
-            <a href="#mySkills">My Skills</a> 
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a> 
-            <a href="images\C.V.pdf">Resume</a> 
-          </div>
-          </div>
+        <div class="logoContainer">
+            <a href="#home" class="split"><img id="logo" src="images\Logo.png" alt="Logo Image"/></a> 
         </div>
+        <div class="menu">
+          <div class="menuItems">
+           <a href="#home" class="menuItem">Home</a>
+            <a href="#about" class="menuItem">About</a> 
+            <a href="#mySkills" class="menuItem">My Skills</a> 
+            <a href="#projects" class="menuItem">Projects</a>
+            <a href="#contact" class="menuItem">Contact</a> 
+            <a href="images\C.V.pdf" class="menuItem">Resume</a>
+          </div>
+            <button class="hamburger">
+            <img class="menubtn menuIcon material-icons" src="images\icons\menu.png" />
+            <img  class="menubtn closeIcon material-icons" src="images\icons\close.png" />
+          </button> 
+        </div>
+        </nav>
 
       <main>
         <!-- Home section -->
@@ -118,12 +121,13 @@
         </div>
       </main>
 
-      <!--Footer section -->
+          <!--Footer section -->
       <footer>
-        <a href="" target="_blank"><img src="images\icons\linkedin.png" /></a>
-        <a href="" target="_blank"><img src="images\icons\github.png" /></a>
-        <a href="https://www.facebook.com/profile.php?id=100010499552339" target="_blank"><img src="images\icons\facebook.png" /></a>
+        <a href="" target="_blank"><img src="images\icons\linkedin.png" alt="LinkedIn Icon"/></a>
+        <a href="" target="_blank"><img src="images\icons\github.png" alt="GitHub Icon"/></a>
+        <a href="https://www.facebook.com/profile.php?id=100010499552339" target="_blank"><img src="images\icons\facebook.png" alt="Facebook Icon"/></a>
         <p>Designed & Built by Vladyslav Gilyuk 2022</p>
       </footer>  
+      <script src="App.js"></script>
   </body>
 </html>
