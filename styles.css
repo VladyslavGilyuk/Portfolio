@@ -163,7 +163,7 @@ height:50px;
     }
     .menuItems {
       position: fixed;
-      transform: translateY(-500%);
+      transform: translateY(-400%);
       top: 0;
       left: 0;
       right: 0;
@@ -183,7 +183,7 @@ height:50px;
 
    @media only screen and (max-width: 480px) {
     .menuItems {
-      padding-top: 50%
+      padding-top: 50%;
     }
    }
 
