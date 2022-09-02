@@ -163,7 +163,7 @@ height:50px;
     }
     .menuItems {
       position: fixed;
-      transform: translateY(-400%);
+      transform: translateY(-500%);
       top: 0;
       left: 0;
       right: 0;
