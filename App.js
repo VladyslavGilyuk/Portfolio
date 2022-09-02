@@ -27,6 +27,7 @@ function toggleMenu() {
 menuItems.forEach( 
   function(menuItem) {  
     menuItem.addEventListener("click", toggleMenu);
+    menuItem.addEventListener("click", unsetScroll);
   }
 )
 
@@ -37,7 +38,15 @@ function removeMenuOnResize() {
   menuIcon.classList.remove("asnone");
 }
 
+function setScroll() {
+  document.getElementById("body").style.overflow = "hidden" 
+}
+function unsetScroll() {
+  document.getElementById("body").style.overflow = "visible" 
+}
+
+
 window.addEventListener('resize', removeMenuOnResize);
 window.onload = setTimeout(function onloadLogo(){ document.getElementById("loading").style.display = "none" }, 2000)
-
+menuIcon.addEventListener("click", setScroll);
 hamburger.addEventListener("click", toggleMenu);
