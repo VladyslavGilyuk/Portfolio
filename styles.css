@@ -7,6 +7,10 @@
     color: white;
     scroll-behavior: smooth;
     font-family: 'Times New Roman', Times, serif;
+  }
+
+body {
+  overflow:hidden;
 }
 
 h1 {
@@ -27,6 +31,7 @@ li {
 
 .section {
   margin-top: 300px;
+  padding-top: 90px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -40,8 +45,8 @@ li {
   margin: auto;
   width: 50%;
   border-bottom: 1px solid aqua;
-margin-bottom: 30px;
-padding-bottom: 20px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -55,17 +60,16 @@ padding-bottom: 20px;
 #loading {
   width: 100%;
   height: 100%;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   position: fixed;
   display: block;
-  z-index: 99
+  z-index: 99;
 }
 
 #loading-image {
   width: 100px;
   height: 100px;
-  margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -75,9 +79,6 @@ padding-bottom: 20px;
 } 
 
 /* Main General settings*/
-main {
-  margin-top: 90px;
-}
 main p {
   font-size: 20px;
 }
@@ -90,20 +91,19 @@ main p {
 
 /* Navigation Bar */ 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px white solid;
-    overflow: hidden;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px white solid;
+  overflow: hidden;
+  position: fixed; 
+  top: 0; 
+  width: 100%;
+  z-index: 1;
 }
 
 .logoContainer {
-margin: 0.4em;
-display: inline;
-height:50px;
+  margin: 0.4em;
+  height: 50px;
 }
 
 #logo {
@@ -128,73 +128,57 @@ height:50px;
 .menu a:hover {
   color: aqua;
 }
-
+/*Smaller Desctop Menu */
 .menubtn {
   display: none;
   width: 48px;
   height: 48px;
 }
-.menuIcon {
-  display: none;
-}
 
-  @media only screen and (max-width: 767px) {
-    .menubtn {
-      display: block;
-    }
-      .closeIcon {
-      display: none;
-    }
+@media only screen and (max-width: 767px) {
+  .toggleBlock {
+    display: block;
+  }
 
-    .asblock {
-      display: block;
-    }
-    .asnone {
-      display: none;
-    }
- 
-    .hamburger {
-      position: fixed;
-      z-index: 100;
-      top: 5px;
-      right: 1rem;
-     border: none;
-      cursor: pointer;
-    }
-    .menuItems {
-      position: fixed;
-      transform: translateY(-400%);
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 99;
-      background: black;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      padding-top: 220px;
-    }
-    .showMenu {
-      transform: translateY(0);
-      
-    }
+  .hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 5px;
+    right: 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  .menuItems {
+    position: fixed;
+    transform: translateY(-400%);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 220px;
+  }
+  .showMenu {
+    transform: translateY(0);
+  }
+  }
 
-   }
-
-   @media only screen and (max-width: 480px) {
-    .menuItems {
-      padding-top: 50%;
-    }
-   }
+  @media only screen and (max-width: 480px) {
+  .menuItems {
+    padding-top: 50%;
+  }
+  }
 
 /* #Home section styles */
-.anchor {
+#homeSection {
   padding-top: 90px;
-   margin-top: -90px;
 }
 
-#home * {
+#homeSection * {
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -206,17 +190,17 @@ height:50px;
   margin-right: 370px;
 }
 
-#home h1 {
+#homeSection h1 {
   font-size: 36px;
 }
 
-#home img {
+#homeSection img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -225,88 +209,81 @@ height:50px;
  }
  #greeting {
   padding: 0px;
+ }
 }
-}
-
 
 @media only screen and (max-width: 480px) {
   #greeting {
     margin-right: 150px;
   }
-  .firstsection h2 {
+  #homeSection h2 {
     font-size: 20px;
   }
  }
 
-
 /* #About section styles */
-.aboutSection p, h4, ul, li {
+#aboutSection p, h4, ul, li {
   padding: 20px;
 }
 
-.aboutSection p {
+#aboutSection p {
   margin: 0 100px;
   text-align: center;
   line-height: 1.5;
 }
 
-.aboutSection li {
+#aboutSection li {
   margin: 0 100px;
 }
 
 #scolarlink {
-  padding: 0px;
+  padding: 0;
   color: aqua;
 }
 
 @media only screen and (max-width: 767px) {
-  .aboutSection p, h4, ul, li {
+  #aboutSection p, h4, ul, li {
     padding: 10px;
   }
-  .aboutSection p {
+  #aboutSection p {
     margin: 0 20px;
   }
-  .aboutSection li {
+  #aboutSection li {
     margin: 0 20px;
   }
 }
-
-@media only screen and (max-width: 480px) {
-  .aboutSection h2 {
-    margin-top: 45px;
-  }
-}
-
 
 /* #My Skills section styles */
-.mySkillsSection h4 {
+#mySkillsSection h4 {
   padding: 15px;
 }
-.mySkillsSection li {
+
+#mySkillsSection li {
   margin: 0 100px;
   padding: 8px;
 }
 
 @media only screen and (max-width: 767px) {
-  .mySkillsSection li {
+  #mySkillsSection li {
     padding: 6px;
   }
 }
+
 @media only screen and (max-width: 480px) {
-  .mySkillsSection li {
+  #mySkillsSection li {
     margin: 0 30px;
     padding: 5px;
   }
 }
 
 /* #Projects section styles */
-.projectsSection img {
+#projectsSection img {
   width: 200px;
   height: 200px;
-
 }
+
 @media only screen and (max-width: 480px) {
-  .projectsSection img {
+  #projectsSection img {
     width: 180px;
     height: 180px;
   }
@@ -318,16 +295,16 @@ height:50px;
   align-items: center;
  }
 
-.projectsSection li {
- display: inline;
- padding: 20px;
+#projectsSection li {
+  display: inline;
+  padding: 20px;
 }
 
- .projectsSection a {
+ #projectsSection a {
   text-decoration: none;
  }
 
- .projectsSection figure {
+ #projectsSection figure {
   display: flex;
   flex-flow: column;
   padding: 5px;
@@ -335,22 +312,23 @@ height:50px;
   margin: auto;
 }
 
-.projectsSection figcaption {
+#projectsSection figcaption {
   color: #fff;
   font: italic smaller sans-serif;
   padding: 10px;
   text-align: center;
 }
 
-.projectsSection img:hover {
+#projectsSection img:hover {
   transform: scale(1.1);
 }
 
-.projectsSection img:hover + figcaption {
+#projectsSection img:hover + figcaption {
   color: aqua;
 
 }
-.projectsSection figcaption:hover {
+
+#projectsSection figcaption:hover {
   color: aqua;
 }
 
@@ -359,6 +337,7 @@ height:50px;
   display: block;
  }
 }
+
 @media only screen and (max-width: 480px) {
   .projectsContainer2 {
 margin-bottom: 150px;
@@ -371,21 +350,23 @@ margin-bottom: 150px;
   width: 50%;
   text-align: center;
   margin-bottom: 300px;
+  padding: 15px;
+  line-height: 1.5;
 }
 
-.contactSection button {
+#contactSection button {
   margin-top: 25px;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 30px;
-    transition: 0.5s;
-    border: 1px solid white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+  transition: 0.5s;
+  border: 1px solid white;
 }
 
-.contactSection button:hover {
-color: aqua;
-border: 1px solid aqua;
+#contactSection button:hover {
+  color: aqua;
+  border: 1px solid aqua;
 }
 
 @media only screen and (max-width: 767px) {
@@ -399,7 +380,7 @@ border: 1px solid aqua;
   .contactContainer {
     margin-bottom: 150px;
   }
-  .contactSection p {
+  #contactSection p {
     margin-top: 20px;
   }
 }
@@ -419,12 +400,14 @@ footer img {
   height:40px;
   margin: 10px 3px;
 }
+
 @media only screen and (max-width: 480px) {
   footer img {
     width: 30px;
     height:30px;
   }
 }
+
 footer img:hover {
   background-color: aqua;
 }

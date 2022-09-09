@@ -6,49 +6,48 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Portfolio</title>
       <link rel="stylesheet" type="text/css" href="styles.css">
-      
   </head>
-  <body id="body">
+  <body>
         <!-- On load -->
       <div id="loading">
         <img id="loading-image" src="images\icons\Logo.png" alt="Loading..." />
       </div>  
         <!-- Navigation Bar -->
       <nav class="navbar">
-
         <div class="logoContainer">
-            <a href="#home" class="split"><img id="logo" src="images\icons\Logo.png" alt="Logo Image"/></a> 
+            <a href="#homeSection"><img id="logo" src="images\icons\Logo.png" alt="Logo Image"/></a> 
         </div>
         <div class="menu">
           <div class="menuItems">
-           <a href="#home" class="menuItem">Home</a>
-            <a href="#about" class="menuItem">About</a> 
-            <a href="#mySkills" class="menuItem">My Skills</a> 
-            <a href="#projects" class="menuItem">Projects</a>
-            <a href="#contact" class="menuItem">Contact</a> 
+            <a href="#homeSection" class="menuItem">Home</a>
+            <a href="#aboutSection" class="menuItem">About</a> 
+            <a href="#mySkillsSection" class="menuItem">My Skills</a> 
+            <a href="#projectsSection" class="menuItem">Projects</a>
+            <a href="#contactSection" class="menuItem">Contact</a> 
             <a href="images\Vladyslav Gilyuk Resume.pdf" target="_blank" class="menuItem">Resume</a>
           </div>
-            <button class="hamburger">
-            <img class="menubtn menuIcon material-icons" src="images\icons\menu.png" />
-            <img  class="menubtn closeIcon material-icons" src="images\icons\close.png" />
+          <button class="hamburger">
+            <img id="menuIcon" class="menubtn  toggleBlock" src="images\icons\menu.png" />
+            <img id="closeIcon" class="menubtn" src="images\icons\close.png" />
           </button> 
         </div>
-        </nav>
+      </nav>
 
+        <!-- Main part -->
       <main>
         <!-- Home section -->
-        <div class="firstsection anchor" id="home">
+        <div id="homeSection">
           <p id="greeting">Hi! I am</p>
           <h1>Vladyslav Gilyuk,</h1>
           <img src="images\Profile_Photo.jpg" alt="My Photo"/>
           <h1>Junior Front End Developer</h1>
-          <h2 class="phrase"><em>"Vlad, you will never become a computer programmer, it's difficult for you, you are a philologist!"</em></h2>
+          <h2><em>"Vlad, you will never become a computer programmer, it's difficult for you, you are a philologist!"</em></h2>
           <h3> — My dear friend Tanyusha</h3>
         </div>
 
         <!-- About section -->
-        <div class="section aboutSection">
-          <a id="about"><h2 class="sectionName anchor">About Me</h2></a>
+        <div id="aboutSection" class="section">
+          <h2 class="sectionName">About Me</h2>
           <p>Hello, you can call me Vlad. I am a self-taught Front End Developer.
             At the final 5th year of studying at English Studies in the French university,
             I understood that neither teaching nor translating are my passion and decided to change my life drastically by switching to IT
@@ -67,8 +66,8 @@
         </div>
 
         <!-- My Skills section -->
-        <div class="section mySkillsSection">
-          <a id="mySkills"><h2 class="sectionName anchor">My Skills</h2></a>
+        <div id="mySkillsSection" class="section">
+          <h2 class="sectionName">My Skills</h2>
               <h4>The technologies I've been working with:</h4>
                   <ul style="list-style-type:square">
                       <li>HTML5</li>
@@ -89,52 +88,54 @@
         </div>
 
           <!-- Projects section -->
-        <div class="section projectsSection">
-            <a id="projects"><h2 class="sectionName anchor">My Projects:</h2></a>
+        <div id="projectsSection" class="section">
+            <h2 class="sectionName">My Projects:</h2>
             <ul class="projectsContainer">
                 <li><a href="https://tic-tac-toe-vlad.netlify.app/" target="_blank">
                   <figure>
-                    <img src="images\projects\Tick-tack-toe.png" alt ="" />
+                    <img src="images\projects\Tick-tack-toe.png" alt="Tic-Tac-Toe Project" />
                     <figcaption>Tic-Tac-Toe JS</figcaption>
                 </figure> </a></li>
                 <li><a href="https://calculator-app-vlad.netlify.app" target="_blank">
                   <figure>
-                    <img src="images\projects\CalculatorReact.png" alt ="" />
+                    <img src="images\projects\CalculatorReact.png" alt="Calculator Project" />
                     <figcaption>Calculator React</figcaption>
                 </figure> </a></li>
                 <li><a href="https://to-do-app-react-vlad.netlify.app" target="_blank">
                   <figure>
-                    <img src="images\projects\To-do.png" alt ="" />
+                    <img src="images\projects\To-do.png" alt="To-do list Project" />
                     <figcaption>To-do list React</figcaption>
                 </figure> </a></li>
                 </ul>
                 <ul class="projectsContainer projectsContainer2">
                 <li><a href="https://weather-vlad.netlify.app" target="_blank">
                   <figure>
-                    <img src="images\projects\Weather.png" alt ="" />
+                    <img src="images\projects\Weather.png" alt="Weather Project" />
                     <figcaption>Weather JS</figcaption>
                 </figure> </a></li>
                 <li><a href="https://calculator-app-vlad.netlify.app" target="_blank">
                   <figure>
-                    <img src="images\projects\CalculatorJS.png" alt ="" />
+                    <img src="images\projects\CalculatorJS.png" alt="Calculator Project" />
                     <figcaption>Calculator JS</figcaption>
                 </figure> </a></li>
                 <li><a href="https://scholar-site-desctop-vlad.netlify.app" target="_blank">
                   <figure>
-                    <img src="images\projects\ScolarSite.png" alt ="" />
+                    <img src="images\projects\ScolarSite.png" alt="Scholar Site Project" />
                     <figcaption>Scholar Site</figcaption>
                 </figure> </a></li>
               </ul>
         </div>
 
           <!--Contact section -->
-        <div class="section contactSection">
-            <a id="contact"><h2 class="sectionName anchor">Contact</h2></a>
+        <div id="contactSection" class="section">
+            <h2 class="sectionName">Contact</h2>
             <div class="contactContainer">
-              <p>Currently looking for a job as a Junior Front End Developer.
-                  If you have some suggestions, offers or any other questions -
-                  You are welcome to hit me up!</p>
-                  <a href="mailto:vladgilyuk@gmail.com"><button >Contact Me</button></a>
+              <p>
+                Currently looking for a job as a Junior Front End Developer.
+                If you have some suggestions, offers or any other questions -
+                You are welcome to hit me up!
+              </p>
+              <a href="mailto:vladgilyuk@gmail.com"><button >Contact Me</button></a>
             </div>
         </div>
       </main>
