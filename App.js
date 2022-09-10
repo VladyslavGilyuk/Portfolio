@@ -11,8 +11,8 @@ function toggleMenu() {
     menu.classList.toggle("showMenu");
     menuIcon.classList.toggle("toggleBlock");
     closeIcon.classList.toggle("toggleBlock");
-  } 
-   else {
+  }
+  else {
     menu.classList.toggle("showMenu");
     menuIcon.classList.toggle("toggleBlock");
     closeIcon.classList.toggle("toggleBlock");

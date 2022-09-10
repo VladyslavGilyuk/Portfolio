@@ -1,13 +1,13 @@
 /* General settings */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #050807;
-    color: white;
-    scroll-behavior: smooth;
-    font-family: 'Times New Roman', Times, serif;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #050807;
+  color: white;
+  scroll-behavior: smooth;
+  font-family: 'Times New Roman', Times, serif;
+}
 
 body {
   overflow:hidden;
@@ -38,7 +38,7 @@ li {
   .section {
     margin-top: 100px;
   }
- }
+}
 
 .sectionName {
   text-align: center;
@@ -51,8 +51,8 @@ li {
 
 @media only screen and (max-width: 480px) {
   .sectionName {
-  margin-bottom: 5px;
-  padding-bottom: 10px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
   }
 }
 
@@ -140,38 +140,40 @@ main p {
     display: block;
   }
 
-  .hamburger {
-    position: fixed;
-    z-index: 100;
-    top: 5px;
-    right: 1rem;
-    border: none;
-    cursor: pointer;
-  }
-  .menuItems {
-    position: fixed;
-    transform: translateY(-400%);
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 99;
-    background: black;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    padding-top: 220px;
-  }
-  .showMenu {
-    transform: translateY(0);
-  }
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 5px;
+  right: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.menuItems {
+  position: fixed;
+  transform: translateY(-400%);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 220px;
   }
 
-  @media only screen and (max-width: 480px) {
-  .menuItems {
-    padding-top: 50%;
+.showMenu {
+  transform: translateY(0);
+}
   }
-  }
+
+@media only screen and (max-width: 480px) {
+.menuItems {
+  padding-top: 50%;
+}
+}
 
 /* #Home section styles */
 #homeSection {
@@ -207,6 +209,7 @@ main p {
  h2 {
   font-size: 25px;
  }
+ 
  #greeting {
   padding: 0px;
  }
@@ -334,13 +337,13 @@ main p {
 
 @media only screen and (max-width: 767px) {
  .projectsContainer {
-  display: block;
+    display: block;
  }
 }
 
 @media only screen and (max-width: 480px) {
   .projectsContainer2 {
-margin-bottom: 150px;
+    margin-bottom: 150px;
   }
  }
 
